@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ParkingSystem implements InParking{
 	int big,modium,small;
-	String[] str;
+	ArrayList<Integer> a;
 	public ParkingSystem(int big, int modium, int small) 
 	{
 		// TODO Auto-generated constructor stub
@@ -48,6 +48,10 @@ public class ParkingSystem implements InParking{
 		}
 		else
 			return false;
+	}
+	public ArrayList<Integer> getPlanParking()
+	{
+		return a;
 	}
 
 	public static void main(String[] args) throws Exception {
